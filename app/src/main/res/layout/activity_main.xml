@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- RecyclerView pour afficher les tâches -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/taskButtonLayout"/>
+
+    <!-- LinearLayout pour aligner les boutons verticalement -->
+    <LinearLayout
+        android:id="@+id/taskButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Bouton pour ajouter une nouvelle tâche -->
+        <Button
+            android:id="@+id/addTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter une tâche" />
+
+        <!-- Bouton pour filtrer les tâches -->
+        <Button
+            android:id="@+id/filterTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrer les tâches"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Bouton pour modifier une tâche -->
+        <Button
+            android:id="@+id/editTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier la tâche"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Bouton pour supprimer une tâche -->
+        <Button
+            android:id="@+id/deleteTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer la tâche"
+            android:layout_marginTop="16dp"/>
+        <Button
+            android:id="@+id/filterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrer" />
+
+    </LinearLayout>
+
+</RelativeLayout>

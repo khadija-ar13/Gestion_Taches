@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Titre de la tâche -->
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Titre de la tâche"
+        android:textSize="16sp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Description de la tâche -->
+    <TextView
+        android:id="@+id/taskDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description de la tâche"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Date d'échéance de la tâche -->
+    <TextView
+        android:id="@+id/taskDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date d'échéance"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Affichage du statut de la tâche (Terminée / Non terminée) -->
+    <TextView
+        android:id="@+id/taskStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Non terminée"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- CheckBox pour changer l'état de la tâche -->
+    <CheckBox
+        android:id="@+id/taskCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
